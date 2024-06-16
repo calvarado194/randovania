@@ -16,25 +16,6 @@ on:
           - prime2
           - samus_returns
 
-  schedule:
-    #        ┌────────── minute (0 - 59)
-    #        │  ┌────────── hour (0 - 23)
-    #        │  │ ┌────────── day of the month (1 - 31)
-    #        │  │ │ ┌────────── month (1 - 12 or JAN-DEC)
-    #        │  │ │ │ ┌────────── day of the week (0 - 6 or SUN-SAT)
-    #        │  │ │ │ │
-    #        │  │ │ │ │
-    #        │  │ │ │ │
-    #        *  * * * *
-    - cron: '0 16 * * 0'  # Blank
-    - cron: '0 16 * * 3'  # Cave Story
-    - cron: '0 16 * * 5'  # Dread
-    - cron: '0 16 * * 2'  # Prime 1
-    - cron: '0 16 * * 1'  # Prime 2
-    - cron: '0 16 * * 4'  # Samus Returns
-    - cron: '0 10 * * 1,5' # AM2R
-    - cron: '0 10 * * 2,6' # Fusion
-
 jobs:
   report:
     runs-on: self-hosted
